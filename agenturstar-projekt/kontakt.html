@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webagentur Star - Kontakt</title>
+    <meta name="description" content="Webagentur-Star - Webdesign & Webdevelopment Kontakt">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <a href="index.html"><img src="logo/webagentur-star-logo.png" alt="Webagentur Star Logo"
+            width="100" height="100">
+        </a>   
+    </header>
+        
+    <nav id="main-menu">
+
+        <ul>
+            <li><a href="index.html" alt="Startseite">Startseite</a> |</li> 
+            <li><a href="leistungen.html" alt="Leistungen">Leistungen</a> |</li> 
+            <li><a href="bildergalerie.html" alt="Bildergalerie">Bildergalerie</a> |</li> 
+            <li><a href="teammitglieder.html" alt="Teammitglieder">Teammitglieder</a> |</li> 
+            <li><a href="werbevideo.html" alt="Werbevideo">Werbevideo</a></li> 
+        </ul>
+  </nav>
+    
+<main>
+    <div class="wrapper">
+     <h1>Kontakt</h1>
+
+      <form name="contact" action="#" method="post" enctype="text/plain">
+      <input type="hidden" name="betreff" id="betreff" value="Kontaktanfrage">
+        <div>
+            
+            <div>
+                <label for="fname">Vorname: *</label>
+                <input type="text" name="fname" id="fname" required>
+            </div>
+
+            <div>
+                <label for="lname">Nachname: *</label>
+                <input type="text" name="lname" id="lname" required>
+            </div>
+
+            <div>
+                <label for="street">Straße & Nr.:</label>
+                <input type="text" name="street" id="street">
+            </div>
+
+            <div>
+                <label for="plz">PLZ / Ort:</label>
+                <input type="text" name="plz" id="plz">
+            </div>
+
+            <div>
+                <label for="land">Land: *</label>
+                <select class="land" name="land" id="land">
+                    <option value="">-- Bitte auswählen --</option>
+                    <option value="de">Deutschland</option>
+                    <option value="at">Österreich</option>
+                    <option value="ch">Schweiz</option>
+                </select>
+            </div>
+        
+            <div>
+                <label for="mail">Email: *</label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+
+            <div>
+                <label for="mobilphone">Mobil: *</label>
+                <input type="tel" name="mobilphone" id="mobilphone" required>
+            </div>
+        
+            <div>
+                <label for="phone">Festnetz:</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            
+            <div>
+                <label for="message">Nachricht: *</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+            </div>
+        </div>
+        
+        <fieldset>
+         <legend>Weitere Informationen:</legend>
+          <label>
+            <input type="radio" name="info" id="info" value="more news">Bitte senden sie mir weitere Informationen.
+          </label><br>
+        
+          <label>
+            <input type="radio" name="datenschutz" id="datenschutz" value="DS akzeptiert" required>
+            Ich habe die <a href="https://www.bundesregierung.de/breg-de/service/datenschutzhinweis/datenschutzerklaerung-1532494" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> 
+            zur Kenntnis genommen und akzeptiere diese.
+          </label><br>
+        </fieldset>
+        
+        <button type="submit">Senden!</button>
+      </form>
+    </div>
+    </main>
+    
+    <footer>
+        <nav id="footer-menu">
+          <ul>
+            <li>&copy; webagenturStar Gmbh |</li>
+            <li><a href="impressum.html" alt="Impressum">Impressum</a> |</li>
+            <li><a href="kontakt.html" alt="Kontakt" aria-current="page"> Kontakt</a> |</li>
+            <li><a href="#top" alt="Nach oben">&#8657; Nach oben</a></li> 
+          </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
